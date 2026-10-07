@@ -1,11 +1,12 @@
 import './App.css'
 import tasks from "./tasks.json"
+import Header from "./components/Header"
 import TaskList from "./components/TaskList"
 
 function App() {
   return (
-    <div className="app">
-      <h1>Student Assistant</h1>
+    <div className="App">
+      <Header />
       <TaskList tasks={tasks} />
     </div>
   )
