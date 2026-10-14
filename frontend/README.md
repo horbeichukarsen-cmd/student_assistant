@@ -14,3 +14,6 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Порівняння підходів до стилізації
+Для цього проєкту зручніше використовувати звичайні CSS-класи, оскільки вони повністю відокремлюють стилі від логіки компонента та забезпечують простий і зрозумілий синтаксис. Styled Components є потужним інструментом для динамічної стилізації на основі props, але для невеликого застосунку вони створюють зайву залежність і ускладнюють код."
