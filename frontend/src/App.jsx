@@ -5,8 +5,8 @@ import TaskList from "./components/TaskList"
 
 function App() {
   return (
-    <div className="App">
-      <Header />
+    <div className="app-container">
+      <Header taskCount={tasks.length} />
       <TaskList tasks={tasks} />
     </div>
   )
