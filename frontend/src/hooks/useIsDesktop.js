@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 function useIsDesktop() {
   const query = "(min-width: 1024px)";
   const [isDesktop, setIsDesktop] = useState(
-    window.matchMedia(query).matches
+    () => window.matchMedia(query).matches
   );
 
   useEffect(() => {
@@ -11,6 +11,7 @@ function useIsDesktop() {
     const handleChange = (event) => setIsDesktop(event.matches);
 
     mediaQueryList.addEventListener("change", handleChange);
+    
     return () => {
       mediaQueryList.removeEventListener("change", handleChange);
     };

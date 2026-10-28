@@ -11,7 +11,6 @@ function TaskItem({ task }) {
     </li>
   );
 }
-
 export default TaskItem;
 
 import styled from "styled-components";
